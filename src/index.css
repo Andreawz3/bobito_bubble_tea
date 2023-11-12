@@ -1,13 +1,44 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+	/* colours */
+	--color-white: #FFFFFF;
+	--color-black: #1E1E1E;
+	--color-yellow: #F8BE38;
+	--color-pink: #F892CA;
+	--color-blue: #B6E2F2;
+
+    /* used for the menu */
+	--color-lightyellow: #FFDF98;
+	--color-shadedyellow: #F0BF54;
+	--color-shadedpink: #E194B0;
+	--color-shadedblue: #9EC3D0;
+	
+	/* Fonts */
+  --primary-font: 'Nunito', sans-serif;;
+  --secondary-font: 'Cherry Bomb One', sans-serif;
+  --body-font-size-desktop: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html,
+body {
+	scroll-behavior: smooth;
+	margin: 0;
+	font-family: var(--primary-font);
+	font-size: var(--body-font-size-desktop);
+	color: var(--color-black);
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+button {
+	font-family: var(--primary-font);
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
 }

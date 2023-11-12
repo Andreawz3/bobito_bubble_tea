@@ -1,0 +1,18 @@
+
+.navbar {
+    /* background-color: var(--color-red); */
+    width: 100%;
+    display: flex;
+}
+.bobito {
+    font-family: var(--secondary-font);
+    font-size: 36px;
+    color: var(--color-pink);
+}
+/* .navbar a {
+    height: 25px;
+    transition: .2s ease-in-out;
+}
+.navbar a:hover {
+    opacity: 0.7;
+} */
