@@ -1,18 +1,30 @@
 
 .navbar {
-    /* background-color: var(--color-red); */
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
 }
 .bobito {
     font-family: var(--secondary-font);
     font-size: 36px;
     color: var(--color-pink);
 }
-/* .navbar a {
-    height: 25px;
-    transition: .2s ease-in-out;
+.nav_links {
+    display: flex;
+    gap: 65px;
 }
-.navbar a:hover {
-    opacity: 0.7;
-} */
+.nav_links a {
+    transition: .5s all ease-in-out;
+}
+.nav_links a:hover {
+    opacity: 0.5;
+}
+.active {
+    color: var(--color-pink);
+    font-weight: 900;
+}
+.nav_links img {
+    height: 23px;
+}
