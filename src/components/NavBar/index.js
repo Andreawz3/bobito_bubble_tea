@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 import styles from './NavBar.module.css'
 
 // ASSETS
-import cart from '../../images/menu/cart.svg'
+import cart from '../../images/icons/cart.svg'
 
 export default function NavBar() {
     const { pathname } = useLocation();

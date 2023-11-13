@@ -1,0 +1,27 @@
+.menu_container {
+
+}
+.img_container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.img_container img {
+    width: 100%;
+}
+.img_container img:first-of-type {
+    height: 400px;
+}
+.img_container img:last-of-type {
+    margin-top: -1px;
+    position: absolute;
+    top: 400px;
+    z-index: -1;
+}
+
+.drinks_container {
+    padding: 200px 80px 80px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 45px;
+}
