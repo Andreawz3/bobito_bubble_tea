@@ -1,0 +1,216 @@
+
+/* Landing Section */
+.landingContainer{
+    width: 1440px;
+}
+
+/* First Row */
+
+.firstRowGraphics{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bobaBox{
+    width: 207px;
+    height: 194px;
+    padding: 54px 60px;
+    background-color: var(--color-yellow);
+    border-top: 2px solid var(--color-black);
+    border-right: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black);
+}
+
+.bubbleBox{
+    width: 498px;
+    height: 194px;
+    padding: 33px 38px;
+    background-color: var(--color-pink);
+    border-top: 2px solid var(--color-black);
+    border-right: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black);
+}
+
+.upTextBox{
+    width: 245px;
+    height: 194px;
+    padding: 31px 22px;
+    background-color: var(--color-black);
+    border-top: 2px solid var(--color-black);
+    border-right: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black);
+}
+
+.noodleBox{
+    width: 492px;
+    height: 194px;
+    padding: 0px 34px;
+    border-top: 2px solid var(--color-black);
+    border-left: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black);
+}
+
+/* Second Row */
+
+.secondRowGraphics{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.starBox{
+    width: 378px;
+    height: 419px;
+    padding: 42px 37px;
+    border-right: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black);
+}
+
+.secondRowColumn{
+    display: flex;
+    flex-direction: column;
+    height: 419px;
+}
+
+.yourDayBox{
+    width: 702px;
+    height: 224px;
+    padding: 40px 68px;
+    background-color: var(--color-blue);
+    border-right: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black);
+}
+
+.strawBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 702px;
+    height: 224px;
+    padding: 57px 32px;
+    border-right: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black);
+}
+
+.makeDrink{
+    width: 178px;
+    height: 70px;
+    text-transform: capitalize;
+    background-color: #221F20;
+    color: var(--color-white);
+    border-top: 2px solid var(--color-black);
+    border-left: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black);
+}
+
+.makeDrink:hover{
+    width: 178px;
+    height: 70px;
+    text-transform: capitalize;
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    transition: 1000ms ease-in-out ;
+    border-top: 2px solid var(--color-black);
+    border-left: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black);
+}
+
+.arrowIcon{
+    width: 84px;
+    height: 70px;
+    padding: 19px 26px;
+    border: 2px solid var(--color-black);
+}
+
+.bubbleTeaBox{
+    width: 360px;
+    height: 419px;
+    padding: 33px 60px;
+    background-color: var(--color-pink);
+    border-bottom: 2px solid var(--color-black);
+}
+
+/* Third Row */
+
+.thirdRowGraphics{
+    height: 307px;
+    border-bottom: 2px solid var(--color-black);
+}
+
+/* Customize Section */
+
+.customizeContainer{
+
+}
+
+.background{
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pinkRectangle{
+    width: 69px;
+    height: 1051px;
+    background-color: var(--color-pink);
+    border-right: 2px solid var(--color-black);
+    border-bottom: 2px solid var(--color-black);
+}
+
+.customizeBackground{
+    width: 1440px;
+    position: absolute;
+}
+
+
+.drinksMenu{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    z-index: 2;
+    gap: 115px;
+    margin-top: 200px;
+}
+
+.drinkColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.passionBox{
+    width: 170px;
+    height: 50px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-blue);
+    border: 2px solid var(--color-black);
+}
+
+.strawlychBox{
+    width: 170px;
+    height: 50px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-pink);
+    border: 2px solid var(--color-black);
+}
+
+.pandanBox{
+    width: 170px;
+    height: 50px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-yellow);
+    border: 2px solid var(--color-black);
+}
