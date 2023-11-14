@@ -1,4 +1,5 @@
 import styles from './Drink.module.css'
+import CustomizeDrinks from '../CustomizeDrinks/index'
 
 export default function Drink({name, desc, image, index}) {
     return (
@@ -25,7 +26,7 @@ export default function Drink({name, desc, image, index}) {
                     index === 1 ? '#E194B0' :
                     index === 2 ? '#9EC3D0' : '#F0BF54'
                 }}
-            >SELECT</button>
+            >SELECT<CustomizeDrinks/></button>
         </div>
     )
 }
