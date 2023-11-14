@@ -14,6 +14,9 @@
 	--color-shadedyellow: #F0BF54;
 	--color-shadedpink: #E194B0;
 	--color-shadedblue: #9EC3D0;
+
+	/* used for CustomizeDrinks */
+	--drop-shadow: #BDBDBD;
 	
 	/* Fonts */
   --primary-font: 'Nunito', sans-serif;;
