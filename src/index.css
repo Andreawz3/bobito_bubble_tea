@@ -17,6 +17,9 @@
 
 	/* used for CustomizeDrinks */
 	--drop-shadow: #BDBDBD;
+
+	/* used for Checkout */
+	--orderSummary-grey: #f9f9f9;
 	
 	/* Fonts */
   --primary-font: 'Nunito', sans-serif;;

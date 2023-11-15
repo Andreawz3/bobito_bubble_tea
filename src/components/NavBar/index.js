@@ -21,7 +21,9 @@ export default function NavBar() {
                 <Link to={'/about-us'} className={splitLocation[1] === "about-us" ? styles.active : ""}>
                     ABOUT US
                 </Link>
-                <img src={cart} alt={'cart'} />
+                <Link to={'/checkout'} className={splitLocation[1] === "checkout" ? styles.active : ""}>
+                    <img src={cart} alt={'cart'} />
+                </Link>
             </div>
         </nav>
     )
