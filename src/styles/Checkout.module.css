@@ -1,0 +1,91 @@
+.container {
+    display: flex;
+
+}
+
+.leftInfo {
+    margin-left: 135px;
+}
+
+.pickupInfo {
+    margin-bottom: 35px;
+}
+
+.pickupHeading {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.orderInfo {
+    background-color: var(--orderSummary-grey);
+}
+
+.rightInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 120px;
+    width: 360px;
+    /* position: absolute; */
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.subheading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+hr {
+    margin: 30px 0 ;
+}
+
+.totalHeading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-cream);
+    border-radius: 10px;
+    padding:  8px 10px;
+    margin-top: 20px;
+}
+
+.cardNumber {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardNumber >img {
+    margin-right: 20px;
+}
+
+.placeOrder {
+    background-color: var(--color-black);
+    padding: 25px 100px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.placeOrder >p {
+    display: flex;
+    justify-content: center;
+    color: var(--color-cream);
+    font-size: 17px;
+    font-weight: bold;
+    text-wrap: nowrap;
+}

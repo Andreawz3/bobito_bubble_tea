@@ -9,6 +9,7 @@ import {
 import Home from "./pages/Home";
 import Menu from "./pages/Menu"
 import AboutUs from "./pages/AboutUs"
+import Checkout from "./pages/Checkout";
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
 			<Route
 				path="/about-us"
 				element={<AboutUs />}
+			/>
+			<Route
+				path="/checkout"
+				element={<Checkout />}
 			/>
 			<Route
 				path="*"
