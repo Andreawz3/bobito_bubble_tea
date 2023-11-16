@@ -1,0 +1,7 @@
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
