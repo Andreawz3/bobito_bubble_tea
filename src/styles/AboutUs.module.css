@@ -1,7 +1,21 @@
 .aboutContainer {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10rem;
-  margin-right: 10rem;
+}
+
+.infoContainer {
+  max-width: 70rem;
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+
+.infoImage {
+  width: 30%;
+}
+
+.aboutParagraph {
+  max-width: 30rem;   
 }
