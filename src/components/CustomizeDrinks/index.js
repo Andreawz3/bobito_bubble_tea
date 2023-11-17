@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { CustomizeDrinksData } from '../../data/CustomizeDrinksData'
+import Cart from '../Cart';
 import styles from './CustomizeDrinks.module.css'
 
 // ASSETS
@@ -10,10 +11,19 @@ import drinkYellow from '../../images/menu/drink-yellow.png'
 
 export default function CustomizeDrinks() {
 
-    // const drinks = [drinkPink, drinkGreen, drinkYellow];
-
     // Popup
     const [isOpen, setIsOpen] = useState(false);
+
+    //Cart component popup
+    const [cartPopup, setcartPopup] = useState(false);
+    
+    //pass data to Cart component
+    const [selectedOptions, setSelectedOptions] = useState({
+        size: '', 
+        sweetness: '',
+        temperature: '',
+        topping: '',
+      });
 
     // Counter
     const [counterAmount, setCounterAmount] = React.useState(1);
@@ -30,11 +40,17 @@ export default function CustomizeDrinks() {
     // Updated handleButtonClick function
     const handleButtonClick = (index, group) => {
         let newSelectedButtons = [];
+
+        const option = CustomizeDrinksData.find((category) => category[group]);
+        const selectedOption = option[group][index];
       
         switch (group) {
           case 'Size':
             newSelectedButtons = toggleButtonState(selectedButtonsSize, index); //`true` or `false`, `1` or `0`
             setSelectedButtonsSize(newSelectedButtons);
+            if (selectedOption && selectedOption.name) {
+                setSelectedOptions((prevOptions) => ({ ...prevOptions, size: selectedOption.name }));
+            }
             switch (index) {
                 case 0: // Small
                     setCounterSizeSmall((isChecked) => (isChecked === -1 ? 0 : -1));
@@ -48,17 +64,29 @@ export default function CustomizeDrinks() {
                     break;
             }
             break;
+
           case 'Sweetness':
             newSelectedButtons = toggleButtonState(selectedButtonsSweetness, index);
             setSelectedButtonsSweetness(newSelectedButtons); 
+            if (selectedOption && selectedOption.name) {
+                setSelectedOptions((prevOptions) => ({ ...prevOptions, sweetness: selectedOption.name }));
+            }
             break;
+
           case 'Temperature':
             newSelectedButtons = toggleButtonState(selectedButtonsTemperature, index);
             setSelectedButtonsTemperature(newSelectedButtons); 
+            if (selectedOption && selectedOption.name) {
+                setSelectedOptions((prevOptions) => ({ ...prevOptions, temperature: selectedOption.name }));
+            }
             break;
+
           case 'Topping':
             newSelectedButtons = toggleButtonState(selectedButtonsTopping, index); //use the toggleButtonState function to create a new array (newSelectedButtons) based on the current state of selectedButtonsTopping with the button at the specified index toggled
             setSelectedButtonsTopping(newSelectedButtons); //set the state of selectedButtonsTopping to the newly created array (newSelectedButtons)
+            if (selectedOption && selectedOption.name) {
+                setSelectedOptions((prevOptions) => ({ ...prevOptions, topping: selectedOption.name }));
+            }
 
             // Update topping counter
             const counterTopping = newSelectedButtons.filter((isChecked) => isChecked).length;
@@ -235,8 +263,9 @@ export default function CustomizeDrinks() {
                         </div>
                     </div>
                     <div className={styles.add_container}>
-                        <button onClick={() => setIsOpen(false)}>
+                        <button onClick={() => setcartPopup(true)}>
                             <p>Add to order - ${(6.75 + counterTopping + counterSizeSmall + counterSizeLarge) * counterAmount}</p>
+                            {cartPopup && <Cart selectedOptions={selectedOptions}/>}
                         </button>
                     </div>
                 </div>
