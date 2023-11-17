@@ -6,6 +6,7 @@
 	--color-pink: #F892CA;
 	--color-blue: #B6E2F2;
 	--color-cream: #F5EAD9;
+	--color-grey: #919191;
 
     /* used for the menu */
 	--color-lightyellow: #FFDF98;
@@ -17,6 +18,7 @@
 
 	/* used for CustomizeDrinks */
 	--drop-shadow: #BDBDBD;
+	--grey-background: #F1F1F1;
 
 	/* used for Checkout */
 	--orderSummary-grey: #f9f9f9;
