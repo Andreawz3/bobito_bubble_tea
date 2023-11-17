@@ -1,0 +1,112 @@
+.background {
+    background-color: rgba(0, 0, 0, 0.5); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1; 
+    overflow-y: scroll; 
+}
+
+.container {
+    position: relative;
+    top: 80%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+    background-color: var(--color-white);
+    padding: 80px 70px 50px 70px;
+}
+
+.close_icon {
+    width: 40px;
+    height: 40px;
+    padding-left: 450px;
+}
+
+.drinkInfo {
+    display: flex;
+    margin-top: 100px;
+    height: 40%;
+}
+
+.drink_image {
+    height: 250px;
+    margin-left: -190px;
+}
+
+.drinkInfoText {
+    display: flex;
+    flex-direction: column;
+    margin-left: -150px;
+    margin-top: -60px;
+}
+
+.drinkName {
+    font-size: 25px;
+    font-weight: 800;
+    text-align: left;
+    white-space: nowrap;
+    color: var(--color-black);
+    margin-bottom: 20px;
+}
+
+.drinkOptions > p {
+    color: var(--color-grey);
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+}
+
+.price {
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.drinkButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.drinkButtons_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: -60px;
+}
+
+.drinkButtons_1 > button {
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--grey-background);
+    border: transparent;
+}
+
+.deleteIcon {
+    height: 25px;
+
+}
+
+.drinkButtons_2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.drinkButtons_2 > button {
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--grey-background);
+    border: transparent;
+}
+
+.drinkButtons_2 > p {
+    margin: 50px 10px 0 10px;
+}

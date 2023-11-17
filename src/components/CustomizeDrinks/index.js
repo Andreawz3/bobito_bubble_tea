@@ -15,7 +15,7 @@ export default function CustomizeDrinks() {
     const [isOpen, setIsOpen] = useState(false);
 
     //Cart component popup
-    const [cartPopup, setcartPopup] = useState(false);
+    const [cartPopup, setCartPopup] = useState(false);
     
     //pass data to Cart component
     const [selectedOptions, setSelectedOptions] = useState({
@@ -263,9 +263,9 @@ export default function CustomizeDrinks() {
                         </div>
                     </div>
                     <div className={styles.add_container}>
-                        <button onClick={() => setcartPopup(true)}>
+                        <button onClick={() => setCartPopup(true)}>
                             <p>Add to order - ${(6.75 + counterTopping + counterSizeSmall + counterSizeLarge) * counterAmount}</p>
-                            {cartPopup && <Cart selectedOptions={selectedOptions}/>}
+                            {cartPopup && <Cart selectedOptions={selectedOptions} closeCart={() => setCartPopup(false)} price={(6.75 + counterTopping + counterSizeSmall + counterSizeLarge) * counterAmount} amount={counterAmount}/>}
                         </button>
                     </div>
                 </div>
