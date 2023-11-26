@@ -11,6 +11,7 @@
 }
 .img_container img:first-of-type {
     height: 400px;
+    object-fit: cover;
 }
 .img_container img:last-of-type {
     margin-top: -1px;
