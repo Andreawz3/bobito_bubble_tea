@@ -1,11 +1,3 @@
-.mainContainer{
-    /* width: 100%;
-    display: flex;
-    justify-content: center; */
-}
-
-.contentContainer{
-}
 /* Landing Section */
 .landingContainer{
     width: 100%;
@@ -119,10 +111,6 @@
     justify-content: center;
 }
 
-.strawImage{
-    /* width: 50%; */
-}
-
 .makeDrink{
     height: 70px;
     width: 178px;
@@ -187,9 +175,6 @@
 .background{
     width: 100%;
     display: flex;
-    /* flex-direction: row;
-    align-items: center;
-    justify-content: center; */
 }
 
 .pinkRectangle{
@@ -202,7 +187,6 @@
 
 .customBackground{
     position: absolute;
-    /* width: -webkit-fill-available; */
 }
 
 .drinksMenu{
