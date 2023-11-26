@@ -1,16 +1,16 @@
 export const boba = [
     {
-        name: "Boba Name",
+        name: "Passion Fruit Mango",
         price: "$6.75",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
-        name: "Boba Name",
+        name: "Strawberry Lychee",
         price: "$6.75",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
-        name: "Boba Name",
+        name: "Pandan",
         price: "$6.75",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
