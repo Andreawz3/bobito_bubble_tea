@@ -1,14 +1,5 @@
 export const CustomizeDrinksData = [
     {
-        "drink" : [
-            {
-                name: "Pearl Milk Tea",
-                price: "$6.75",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            }
-        ]
-    },
-    {
         "Size": [
             {
                 name: "Small",
@@ -16,7 +7,7 @@ export const CustomizeDrinksData = [
             },
             {
                 name: "Regular",
-                price: null,
+                price: '',
             },
             {
                 name: "Large",
