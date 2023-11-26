@@ -142,6 +142,8 @@ export default function Home() {
 
                         </div>
                     </div>
+
+                    //testimonials section
                 </div>
             </div>
         </>
