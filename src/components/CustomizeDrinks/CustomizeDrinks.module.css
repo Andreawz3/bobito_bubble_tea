@@ -1,100 +1,97 @@
-.select > button{
+.overlay {
     position: absolute;
-    margin: -37px -77px;
-    background-color: transparent;
-    padding: 24px 75px;
-    border: none;
-    /* color: #000;  */
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
 }
 
-.container {
-    position: fixed;
+.boba__container {
+    position: absolute;
     top: 0;
     right: 0;
     height: 100vh;
-    overflow-y: scroll; 
+    overflow-y: scroll;
     background-color: var(--color-white);
-    padding: 110px 100px 0 110px;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--primary-font);
 }
-
 .close_icon {
     width: 40px;
     height: 40px;
-    padding-left: 450px;
+    margin-left: auto;
 }
 
-.drink_info {
-    margin-top: 150px;
+/* BOBA INFO SECTION */
+.boba_info__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
 }
-
 .drink_image {
     height: 300px;
 }
-
+.boba_info__container h3 {
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+}
+.boba_info__container p {
+    text-align: center;
+}
 .price {
     font-size: 22px;
     font-weight:900;
-    padding: 10px;
+    margin-bottom: 20px;
 }
 
 .amount_container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    gap: 40px;
 }
-
 .counter {
-    margin-top: 55px;
     font-size: 22px;
 }
-
 .amount_container > button {
     background-color: var(--color-cream);
     width: 40px;
-    /* height: 40px; */
+    height: 40px;
     border-radius: 50%;
     border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.hr {
-    /* width: 500px; */
-    border: 0;
-    height: 1px;
-    background: var(--color-black);
-    margin-top: 40px;
+/* CUSTOMIZE SECTION */
+.boba__container hr {
+    width: 100%;
+    border: 1px solid var(--color-black);
+    margin: 80px 0 0;
 }
 
 .options {
     margin-top: 40px;
 }
-
 .options_button {
     display: flex;
     justify-content: space-between;
 }
-
 .options_button > button{
     background-color: var(--color-cream);
     border-radius: 10px;
     width: 130px;
     height: 70px;
 }
-
 .heading {
     font-size: 25px;
     text-align: left;
-    margin-bottom: -35px;
+    margin-bottom: 15px;
 }
-
-.headingTemperature {
-    font-size: 25px;
-    text-align: left;
-    margin-bottom: -25px;
-}
-
 .options_text {
     font-size: 22px;
     font-weight: lighter;
@@ -102,12 +99,10 @@
     align-items: center;
     justify-content: center;
 }
-
 .price_change {
-    color: var(--color-blue);
+    color: var(--color-grey);
     font-size: 15px;
 }
-
 .options_button_Sweetness > button{
     background-color: var(--color-cream);
     /* border-radius: 10px; */
@@ -142,20 +137,18 @@
     /* color: var(--color-black); */
 }
 
+/* ADD BUTTON */
 .add_container {
     box-shadow: 0px -2px 300px var(--drop-shadow); 
     margin: 50px -100px 0 -110px;
     background-color: var(--color-white);
 }
-
 .add_container > button {
     width: 520px;
     height: 80px;
     background-color: var(--color-black);
     border-radius: 10px;
-    margin-bottom: 40px;
 }
-
 .add_container > button > p {
     font-size: 30px;
     color: var(--color-cream);
