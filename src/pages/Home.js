@@ -117,24 +117,27 @@ export default function Home() {
                                             src={passionfruitDrink}
                                             alt="passionfruit"
                                             />
-                                        <div className={styles.passionBox}>Passionfruit Mango</div>
+                                        <div className={styles.passionBox}>Mango Tango</div>
                                     </div>
                                     <div className={styles.drinkColumn}>
                                         <img 
                                             src={strawberryLycheeDrink}
-                                            alt="strawberry lychee"
+                                            alt="strawberry serenade"
                                             />
-                                        <div className={styles.strawlychBox}>Strawberry Lychee</div>
+                                        <div className={styles.strawlychBox}>Strawberry Serenade</div>
                                     </div>
                                     <div className={styles.drinkColumn}>
                                     <img 
                                         src={pandanDrink}
                                         alt="pandan"
                                         />
-                                    <div className={styles.pandanBox}>Pandan</div>
+                                    <div className={styles.pandanBox}>Pandan dream pop</div>
                                     </div>
                                 </div>
-                                <img src={customizeBackground}/>
+                                <img 
+                                    src={customizeBackground}
+                                    className={styles.customBackground}
+                                />
                             </div>
 
                         </div>
