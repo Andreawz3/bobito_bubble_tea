@@ -5,9 +5,6 @@ import styles from './CustomizeDrinks.module.css'
 
 // ASSETS
 import Close from '../../images/icons/close-icon.svg'
-import drinkPink from '../../images/assets/customize-drink-pink.svg'
-import drinkGreen from '../../images/menu/drink-green.png'
-import drinkYellow from '../../images/menu/drink-yellow.png'
 
 export default function CustomizeDrinks({name, desc, image, index, setIsOpen}) {
     //Cart component popup
@@ -50,16 +47,18 @@ export default function CustomizeDrinks({name, desc, image, index, setIsOpen}) {
             }
             switch (index) {
                 case 0: // Small
-                    setCounterSizeSmall((isChecked) => (isChecked === -1 ? 0 : -1));
-                    setCounterSizeLarge(0); // Reset counterSizeLarge to 0 when toggling Small
+                setCounterSizeSmall((isChecked) => (isChecked === 0 ? 0 : 0));
+                setCounterSizeLarge(0); // Reset counterSizeSmall to 0 when toggling Small
+                break;
+                case 1: // Medium
+                    setCounterSizeSmall((isChecked) => (isChecked === 1 ? 0 : 1));
+                    setCounterSizeLarge(0); // Reset counterSizeMedium to 0 when toggling Medium
                     break;
                 case 2: // Large
-                    setCounterSizeLarge((isChecked) => (isChecked === 1 ? 0 : 1));
+                    setCounterSizeLarge((isChecked) => (isChecked === 2 ? 0 : 2));
                     setCounterSizeSmall(0); // Reset counterSizeSmall to 0 when toggling Large
                     break;
                 default:
-                    setCounterSizeSmall(0);
-                    setCounterSizeLarge(0);
                     break;
             }
             break;
@@ -197,7 +196,6 @@ export default function CustomizeDrinks({name, desc, image, index, setIsOpen}) {
                                                 onClick={() => handleButtonClick(SweetnessIndex, 'Sweetness')}
                                             >
                                                 <p className={styles.options_text}>{Sweetness.name}</p>
-                                                <p className={styles.price_change}>{Sweetness.price}</p>
                                             </button>
                                         ))}
                                     </div>
