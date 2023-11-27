@@ -11,6 +11,7 @@ import drinkPink from '../images/menu/drink-pink.png'
 import drinkGreen from '../images/menu/drink-green.png'
 import drinkYellow from '../images/menu/drink-yellow.png'
 import Drink from '../components/Drink'
+import Footer from '../components/Footer'
 
 export default function Menu() {
     const drinks = [drinkPink, drinkGreen, drinkYellow];
@@ -37,6 +38,7 @@ export default function Menu() {
                     })}
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

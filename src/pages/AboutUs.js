@@ -3,6 +3,7 @@ import { boba } from '../data/boba'
 
 // COMPONENTS
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 
 // Images
 import bubbleTea from '../images/assets/milk_tea_with_pearl.png'
@@ -90,6 +91,7 @@ export default function AboutUs() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }
