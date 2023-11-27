@@ -121,6 +121,7 @@
 }
 
 /* NOTES */
+/* ADD A NOTE BUTTON */
 .cart__note {
     margin: 50px 0 25px;
 }
@@ -133,6 +134,22 @@
     border-radius: 10px;
     gap: 410px;
     padding: 18px 25px;
+}
+
+/* ADD NOTE INPUT */
+.note_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-cream);
+    border-radius: 10px;
+    gap: 35.5px;
+    padding: 10px 25px;
+}
+
+.note_container > input {
+    width: 370px;
+    height: 40px;
 }
 
 /* CHECKOUT BUTTON */

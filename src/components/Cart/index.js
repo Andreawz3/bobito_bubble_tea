@@ -18,6 +18,29 @@ export default function Cart({ selectedOptions, price, amount, closeCart, name, 
   const [counterAmount, setCounterAmount] = useState(0);
   const Counter = () => counterAmount + amount;
 
+  //note 
+  const [noteButton, setNoteButton] = useState(true);
+  const [notePopup, setNotePopup] = useState(false);
+
+  //toggle the note
+  const handleTogglePopup = () => {
+	setNotePopup(true);
+	setNoteButton(false);
+  };
+
+  //save note
+  const [noteText, setNoteText] = useState('');
+
+  const handleChange = (e) => {
+    setNoteText(e.target.value);
+  }
+
+  //save button
+  const saveNote = () => {
+    setNotePopup(false);
+    setNoteButton(true);
+  };
+
 
   return (
     <div className={styles.overlay}>
@@ -68,13 +91,28 @@ export default function Cart({ selectedOptions, price, amount, closeCart, name, 
 				</div>
 			</div>
 			<div className={styles.cart__note}>
-				<button>
-					<p>Add a note</p>
-					<img
-						src={RightArrow}
-						alt="rightarrow"
-					/>
-				</button>
+				{noteButton && (
+					<button onClick={handleTogglePopup}>
+						<p>Add a note</p>
+						<img
+							src={RightArrow}
+							alt="rightarrow"
+						/>
+					</button>
+				)}
+				{notePopup && (
+					<div className={styles.note_container}>
+						<input
+							type="text"
+							placeholder="Write a note ..."
+							value={noteText}
+							onChange={handleChange}
+						/>
+						<button onClick={saveNote}>
+							Save
+						</button>
+					</div>
+				)}
 			</div>
 			<Link to={'/checkout'} className={splitLocation[1] === "checkout" ? styles.active : ""}>
 				<button className={styles.cart__checkout}>Go To Checkout</button>
