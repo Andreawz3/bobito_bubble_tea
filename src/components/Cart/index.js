@@ -5,21 +5,23 @@ import styles from "./Cart.module.css";
 
 // ASSETS
 import Close from '../../images/icons/close-icon.svg'
-import drinkPink_cart from '../../images/assets/drinksPink_cart.svg'
 import Delete from '../../images/icons/delete.svg'
 import RightArrow from '../../images/icons/right arrow.svg'
 
-export default function Cart({ selectedOptions, price, amount, closeCart, name, image }) {
+export default function Cart({ selectedOptions, price, amount, closeCart, name, image, onDelete, onEdit }) {
 
+  // Link
   const { pathname } = useLocation();
   const splitLocation = pathname.split("/");
 
   // Counter
-  const [counterAmount, setCounterAmount] = React.useState(0);
+  const [counterAmount, setCounterAmount] = useState(0);
+  const Counter = () => counterAmount + amount;
+
 
   return (
-    <div className={styles.cart__background}>
-		<div className={styles.cart__container}>
+    <div className={styles.overlay}>
+		<div className={styles.boba__container}>
 			<img 
 				src={Close} 
 				alt="close_icon" 
@@ -41,23 +43,24 @@ export default function Cart({ selectedOptions, price, amount, closeCart, name, 
 							<p>Temperature: {selectedOptions.temperature}</p>
 							<p>Topping: {selectedOptions.topping}</p>
 						</div>
-						<p className={styles.price}>${price}</p>
+						<p className={styles.price}>${price + ((price * counterAmount) / amount)}</p>
 					</div>
 				</div>
 				<div className={styles.drinkButtons}>
 					<div className={styles.drinkButtons_1}>
-						<p>Edit</p>
+						<p onClick={onEdit}>Edit</p>
 						<img
 							src={Delete}
 							alt="delete"
 							className={styles.deleteIcon}
+							onClick={onDelete}
 						/>
 					</div>
 					<div className={styles.drinkButtons_2}>
-						<button onClick={() => setCounterAmount(Math.max(counterAmount - 1, 1))}> 
+						<button onClick={() => setCounterAmount(Math.max(counterAmount - 1, 0))}>  
 							-
 						</button>
-						<p className={styles.counter}>{counterAmount + amount}</p>
+						<p className={styles.counter}>{Counter()}</p>
 						<button onClick={() => setCounterAmount(counterAmount + 1)}>
 							+
 						</button>

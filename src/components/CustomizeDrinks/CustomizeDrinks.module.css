@@ -20,6 +20,7 @@
     align-items: center;
     font-family: var(--primary-font);
 }
+
 .close_icon {
     width: 40px;
     height: 40px;

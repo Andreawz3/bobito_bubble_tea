@@ -1,38 +1,45 @@
-.cart__background {
-    background-color: rgba(0, 0, 0, 0.5); 
-    position: fixed;
-    top: 0;
+.overlay {
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.5); */
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
 }
+
 /* CART CONTENT SECTION */
-.cart__container {
-    z-index: 2; 
-    min-width: 620px;
+.boba__container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    overflow-y: scroll;
     background-color: var(--color-white);
-    padding: 50px 60px;
+    padding: 50px 90px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    font-family: var(--primary-font);
 }
+
 .close_icon {
     width: 40px;
     height: 40px;
     margin-left: auto;
 }
+
 .cart__info {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
 }
+
 .cart__info_content {
     display: flex;
     align-items: center;
     gap: 45px;
 }
+
 .drink_image {
     height: 200px;
     /* margin-left: -190px; */
@@ -53,43 +60,57 @@
     color: var(--color-black);
     margin-bottom: 20px;
 }
+
 .drinkOptions > p {
     color: var(--color-grey);
     font-weight: 400;
     font-size: 15px;
     text-align: left;
 }
+
 .price {
     font-weight: 400;
     font-size: 15px;
     text-align: left;
     margin-top: 40px;
 }
+
 .drinkButtons {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .drinkButtons_1 {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
+
+.drinkButtons_1 > p {
+    cursor:pointer;
+}
+
 .drinkButtons_1 > button {
     width: 10px;
     border-radius: 50%;
     background-color: var(--grey-background);
     border: transparent;
 }
+
 .drinkButtons_1 img {
     height: 25px;
+    cursor:pointer;
 }
+
 .drinkButtons_2 {
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
 .drinkButtons_2 > button {
     height: 30px;
     width: 30px;
@@ -103,13 +124,14 @@
 .cart__note {
     margin: 50px 0 25px;
 }
+
 .cart__note button {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-cream);
     border-radius: 10px;
-    width: 100%;
+    gap: 410px;
     padding: 18px 25px;
 }
 
