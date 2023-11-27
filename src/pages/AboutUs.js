@@ -3,13 +3,14 @@ import { boba } from '../data/boba'
 
 // COMPONENTS
 import NavBar from '../components/NavBar'
+import Testimonial from '../components/Testimonial'
 
 // Images
 import bubbleTea from '../images/assets/milk_tea_with_pearl.png'
 export default function AboutUs() {
 
     return (
-        <>
+        <div>
             <NavBar />
             <div className={styles.aboutContainer}>
                 <div className={styles.infoContainer}>
@@ -89,7 +90,8 @@ export default function AboutUs() {
                         </div>
                     </div>
                 </div>
+                <Testimonial />
             </div>
-        </>
+        </div>
     )
 }

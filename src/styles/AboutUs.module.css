@@ -37,7 +37,7 @@
   border-radius: 1em;
   background-size: cover;
   background-position: center;
-  transition: width 0.5s;
+  transition: width 1s;
 }
 
 .member {
