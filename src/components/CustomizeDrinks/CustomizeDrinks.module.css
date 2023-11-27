@@ -100,7 +100,7 @@
     justify-content: center;
 }
 .price_change {
-    color: var(--color-grey);
+    color: var(--color-pink);
     font-size: 15px;
 }
 .options_button_Sweetness > button{

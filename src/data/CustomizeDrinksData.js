@@ -3,15 +3,15 @@ export const CustomizeDrinksData = [
         "Size": [
             {
                 name: "Small",
-                price: "-$1",
+                price: 6.75,
             },
             {
-                name: "Regular",
-                price: '',
+                name: "Medium",
+                price: 7.75,
             },
             {
                 name: "Large",
-                price: "+$1",
+                price: 8.75,
             },
         ]
     },
