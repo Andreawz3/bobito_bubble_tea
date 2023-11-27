@@ -172,21 +172,16 @@
     position: absolute;
 }
 
-.background{
-    width: 100%;
-    display: flex;
-}
-
-.pinkRectangle{
+/* .pinkRectangle{
     width: 20%;
     height: 1051px;
     background-color: var(--color-pink);
     border-right: 2px solid var(--color-black);
     border-bottom: 2px solid var(--color-black);
-}
+} */
 
 .customBackground{
-    position: absolute;
+    /* position: absolute; */
 }
 
 .drinksMenu{

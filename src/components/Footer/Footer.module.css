@@ -1,0 +1,34 @@
+.mainContainer{
+    border: 2px solid var(--color-black);
+    display: flex;
+    flex-direction: row;
+    
+}
+.logoSection{
+    background-color: var(--color-blue);
+    border-right: 2px solid var(--color-black);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuSection{
+    background-color: var(--color-pink);
+    border-right: 2px solid var(--color-black);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.socialSection{
+    background-color: var(--color-yellow);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

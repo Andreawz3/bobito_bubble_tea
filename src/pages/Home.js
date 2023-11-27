@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css'
 
 // COMPONENTS
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 
 //GRAPHICS
 import bobaGraphic from '../images/assets/boba-graphic.svg'
@@ -109,7 +110,7 @@ export default function Home() {
                     </div>
                     <div className={styles.customizeContainer}>
                         <div className={styles.background}>
-                            <div className={styles.pinkRectangle}/>
+                            {/* <div className={styles.pinkRectangle}/> */}
                             <div className={styles.menuContainer}>
                                 <div className={styles.drinksMenu}>
                                     <div className={styles.drinkColumn} >
@@ -142,10 +143,10 @@ export default function Home() {
 
                         </div>
                     </div>
-
                     //testimonials section
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

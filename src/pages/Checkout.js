@@ -7,6 +7,7 @@ import NavBar from '../components/NavBar'
 import Map from '../../src/images/assets/map.svg'
 import Card from '../../src/images/assets/card.svg'
 import RightArrow from '../../src/images/icons/right arrow.svg'
+import Footer from '../components/Footer'
 
 export default function Checkout() {
     return(
@@ -61,6 +62,7 @@ export default function Checkout() {
                     </button>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 
