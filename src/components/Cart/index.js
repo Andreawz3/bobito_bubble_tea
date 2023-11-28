@@ -21,26 +21,43 @@ export default function Cart({ selectedOptions, price, amount, closeCart, name, 
   //note 
   const [noteButton, setNoteButton] = useState(true);
   const [notePopup, setNotePopup] = useState(false);
+  const [noteSave, setNoteSave] = useState(false);
+  const [noteEdit, setNoteEdit] = useState(false);
 
   //toggle the note
   const handleTogglePopup = () => {
 	setNotePopup(true);
 	setNoteButton(false);
+	setNoteSave(true);
   };
 
   //save note
   const [noteText, setNoteText] = useState('');
-
   const handleChange = (e) => {
-    setNoteText(e.target.value);
+	if (!noteEdit) {
+		setNoteText(e.target.value);
+	  }
   }
 
   //save button
   const saveNote = () => {
-    setNotePopup(false);
-    setNoteButton(true);
+    setNoteSave(false);
+    setNoteEdit(true);
   };
 
+  //edit button
+  const editNote = () => {
+	setNoteEdit(false);
+    setNoteSave(true);
+  }
+
+  //remove note
+  const removeNote = () => {
+	setNoteText('');
+	setNotePopup(false);
+	setNoteButton(true);
+	setNoteEdit(false);
+  }
 
   return (
     <div className={styles.overlay}>
@@ -92,7 +109,9 @@ export default function Cart({ selectedOptions, price, amount, closeCart, name, 
 			</div>
 			<div className={styles.cart__note}>
 				{noteButton && (
-					<button onClick={handleTogglePopup}>
+					<button 
+						className={styles.note_container}
+						onClick={handleTogglePopup}>
 						<p>Add a note</p>
 						<img
 							src={RightArrow}
@@ -101,16 +120,38 @@ export default function Cart({ selectedOptions, price, amount, closeCart, name, 
 					</button>
 				)}
 				{notePopup && (
-					<div className={styles.note_container}>
-						<input
-							type="text"
-							placeholder="Write a note ..."
-							value={noteText}
-							onChange={handleChange}
-						/>
-						<button onClick={saveNote}>
-							Save
-						</button>
+					<div className={styles.noteEdit_container}>
+						<p>Add a note</p>
+						<div className={styles.note_input_container}>
+							<input
+								className={styles.note_input}
+								type="text"
+								placeholder="Write a note ..."
+								value={noteText}
+								onChange={handleChange}
+							/>
+							{noteSave && (
+								<button 
+									className={styles.button}
+									onClick={saveNote}>
+									Save
+								</button>
+							)}
+							{noteEdit && (
+								<div className={styles.note_buttons}>
+									<button 
+										className={styles.button}
+										onClick={editNote}>
+										Edit
+									</button>
+									<button 
+										className={styles.button}
+										onClick={removeNote}>
+										Remove
+									</button>
+								</div>
+							)}
+						</div>
 					</div>
 				)}
 			</div>
