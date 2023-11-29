@@ -16,7 +16,7 @@ export default function Cart({ selectedOptions, price, amount, closeCart, name, 
 
   // Counter
   const [counterAmount, setCounterAmount] = useState(0);
-  const Counter = () => counterAmount + amount;
+  const finalAmount = counterAmount + amount;
 
   //note 
   const [noteButton, setNoteButton] = useState(true);
@@ -59,6 +59,16 @@ export default function Cart({ selectedOptions, price, amount, closeCart, name, 
 	setNoteEdit(false);
   }
 
+  //passing data to checkout
+  const currentData = {
+	selectedOptions, 
+	price, 
+	amount, 
+	name,
+	finalAmount,
+	noteText
+};
+
   return (
     <div className={styles.overlay}>
 		<div className={styles.boba__container}>
@@ -100,7 +110,7 @@ export default function Cart({ selectedOptions, price, amount, closeCart, name, 
 						<button onClick={() => setCounterAmount(Math.max(counterAmount - 1, 0))}>  
 							-
 						</button>
-						<p className={styles.counter}>{Counter()}</p>
+						<p className={styles.counter}>{finalAmount}</p>
 						<button onClick={() => setCounterAmount(counterAmount + 1)}>
 							+
 						</button>
@@ -155,7 +165,11 @@ export default function Cart({ selectedOptions, price, amount, closeCart, name, 
 					</div>
 				)}
 			</div>
-			<Link to={'/checkout'} className={splitLocation[1] === "checkout" ? styles.active : ""}>
+			<Link 
+				to={'/checkout'}
+				state={{currentData}}
+				className={splitLocation[1] === "checkout" ? styles.active : ""}
+			>
 				<button className={styles.cart__checkout}>Go To Checkout</button>
 			</Link>
 		</div>
