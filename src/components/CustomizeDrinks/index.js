@@ -298,7 +298,8 @@ export default function CustomizeDrinks({name, desc, image, index, setIsOpen}) {
                 <Cart 
                     selectedOptions={selectedOptions} 
                     closeCart={() => setCartPopup(false)} 
-                    price={(6.75 + counterTopping + counterSizeSmall + counterSizeLarge) * counterAmount} amount={counterAmount}
+                    price={(6.75 + counterTopping + counterSizeSmall + counterSizeLarge) * counterAmount} 
+                    amount={counterAmount}
                     name={name}
                     image={image}
                     onDelete={handleDeleteCartItem}
