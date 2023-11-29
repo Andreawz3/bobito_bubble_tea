@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Menu from "./pages/Menu"
 import AboutUs from "./pages/AboutUs"
 import Checkout from "./pages/Checkout";
+import OrderPlaced from './pages/OrderPlaced';
 
 function App() {
   return (
@@ -32,6 +33,10 @@ function App() {
 			<Route
 				path="/checkout"
 				element={<Checkout />}
+			/>
+			<Route
+				path="/order-placed"
+				element={<OrderPlaced />}
 			/>
 			<Route
 				path="*"

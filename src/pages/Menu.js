@@ -3,6 +3,8 @@ import { boba } from '../data/boba'
 
 // COMPONENTS
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
+import Drink from '../components/Drink'
 
 // ASSETS
 import headerImg from '../images/menu/header-img.png'
@@ -10,8 +12,6 @@ import headerDesign from '../images/menu/bg.png'
 import drinkPink from '../images/menu/drink-pink.png'
 import drinkGreen from '../images/menu/drink-green.png'
 import drinkYellow from '../images/menu/drink-yellow.png'
-import Drink from '../components/Drink'
-import Footer from '../components/Footer'
 
 export default function Menu() {
     const drinks = [drinkPink, drinkGreen, drinkYellow];

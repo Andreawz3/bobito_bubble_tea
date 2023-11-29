@@ -153,9 +153,14 @@ export default function Checkout() {
                                 </button>
                             </div>
                         )}
-                        <button className={styles.placeOrder}>
+                        <Link
+                            to={'/order-placed'} 
+                            className={splitLocation[1] === "order-placed" ? styles.active : ""}
+                        >
+                            <button className={styles.placeOrder}>
                             <p>Place Your Order - {(currentData.price * 0.03 + currentData.price).toFixed(2)}</p> 
                         </button>
+                        </Link>
                     </div>
                 ) : (
                     ''
