@@ -138,12 +138,13 @@ export default function Home() {
                                 <img 
                                     src={customizeBackground}
                                     className={styles.customBackground}
+                                    alt='background'
                                 />
                             </div>
 
                         </div>
                     </div>
-                    //testimonials section
+                    {/* //testimonials section */}
                 </div>
             </div>
             <Footer/>

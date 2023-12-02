@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CustomizeDrinksData } from '../../data/CustomizeDrinksData'
+// import { CustomizeDrinksData } from '../../data/CustomizeDrinksData'
 import { Link, useLocation } from 'react-router-dom'
 import styles from "./Cart.module.css";
 

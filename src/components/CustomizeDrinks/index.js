@@ -9,7 +9,8 @@ import Close from '../../images/icons/close-icon.svg'
 export default function CustomizeDrinks({name, desc, image, index, setIsOpen}) {   
     //Cart component popup
     const [cartPopup, setCartPopup] = useState(false);
-    const [price, setPrice] = useState(6.75);
+    // const [price, setPrice] = useState(6.75);
+    let price = 6.75;
 
     //CustomizeDrink popup
     const [showCustomizeDrinks, setShowCustomizeDrinks] = useState(true);

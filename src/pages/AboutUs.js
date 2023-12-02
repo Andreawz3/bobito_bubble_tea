@@ -1,5 +1,4 @@
 import styles from '../styles/AboutUs.module.css'
-import { boba } from '../data/boba'
 
 // COMPONENTS
 import NavBar from '../components/NavBar'
