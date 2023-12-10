@@ -1,6 +1,6 @@
 .drink {
     padding: 50px 40px;
-    width: 400px;
+    width: 30%;
     min-height: 640px;
     border: 2px solid #1E1E1E;
     background: var(--color-lightyellow);

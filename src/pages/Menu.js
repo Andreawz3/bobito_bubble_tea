@@ -12,9 +12,11 @@ import headerDesign from '../images/menu/bg.png'
 import drinkPink from '../images/menu/drink-pink.png'
 import drinkGreen from '../images/menu/drink-green.png'
 import drinkYellow from '../images/menu/drink-yellow.png'
+import drinkBrown from '../images/menu/drink-brown.png'
+import dirnkClassic from '../images/menu/drink-classic.png'
 
 export default function Menu() {
-    const drinks = [drinkPink, drinkGreen, drinkYellow];
+    const drinks = [drinkPink, drinkGreen, drinkYellow, drinkBrown, dirnkClassic];
 
     return (
         <>

@@ -13,7 +13,8 @@ export default function Drink({name, desc, image, index}) {
                 style={{ backgroundColor: 
                     index === 0 ? '#FFDF98' :
                     index === 1 ? '#FEC7DB' :
-                    index === 2 ? '#B6E2F2' : '#FFDF98'
+                    index === 2 ? '#B6E2F2' : 
+                    index === 3 ? '#EACBAD' : '#E7B082'
                 }}
             >
                 <div>
@@ -22,7 +23,8 @@ export default function Drink({name, desc, image, index}) {
                         style={{ color: 
                             index === 0 ? '#F0BF54' :
                             index === 1 ? '#E194B0' :
-                            index === 2 ? '#9EC3D0' : '#F0BF54'
+                            index === 2 ? '#9EC3D0' :
+                            index === 3 ? '#C8A079' : '#CA8B54'
                         }}
                     >{name}</h3>
                     <p>{desc}</p>
@@ -31,7 +33,8 @@ export default function Drink({name, desc, image, index}) {
                     style={{ backgroundColor: 
                         index === 0 ? '#F0BF54' :
                         index === 1 ? '#E194B0' :
-                        index === 2 ? '#9EC3D0' : '#F0BF54'
+                        index === 2 ? '#9EC3D0' :
+                        index === 3 ? '#C8A079' : '#CA8B54'
                     }}
                     onClick={() => setIsOpen(true)}
                 >
