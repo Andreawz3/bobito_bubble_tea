@@ -175,7 +175,7 @@ export default function CustomizeDrinks({name, desc, image, index, setIsOpen}) {
                                 index === 2 ? '#9EC3D0' : '#F0BF54'
                             }}
                         >{name} Milk Tea</h3>
-                        <p style={{width: '80%'}}>{desc}</p>
+                        <p className={styles.desc}>{desc}</p>
                         <p className={styles.price}>${price}</p>
                     
                         <div className={styles.amount_container}>

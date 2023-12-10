@@ -27,7 +27,7 @@ export default function Drink({name, desc, image, index}) {
                             index === 3 ? '#C8A079' : '#CA8B54'
                         }}
                     >{name}</h3>
-                    <p>{desc}</p>
+                    <p className={styles.desc} >{desc}</p>
                 </div>
                 <button 
                     style={{ backgroundColor: 
