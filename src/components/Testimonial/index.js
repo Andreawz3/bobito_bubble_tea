@@ -18,7 +18,7 @@ export default function Testimonial() {
 
   return (
     <div className={styles.container}>
-      <p className={styles.title}>Testimonial</p>
+      <p className={styles.title}>TESTIMONIAL</p>
       <div className={styles.testimonialCard}>
         {data && data.map((info, index) => {
           return (

@@ -2,7 +2,7 @@ import styles from '../styles/AboutUs.module.css'
 
 // COMPONENTS
 import NavBar from '../components/NavBar'
-import Testimonial from '../components/Testimonial'
+// import Testimonial from '../components/Testimonial'
 
 // Images
 import bubbleTea from '../images/assets/milk_tea_with_pearl.png'
@@ -89,7 +89,7 @@ export default function AboutUs() {
                         </div>
                     </div>
                 </div>
-                <Testimonial />
+                {/* <Testimonial /> */}
             </div>
         </div>
     )

@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 // COMPONENTS
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import Testimonial from '../components/Testimonial'
 
 //GRAPHICS
 import bobaGraphic from '../images/assets/boba-graphic.svg'
@@ -32,120 +33,116 @@ export default function Home() {
             <NavBar/>
             <div className={styles.mainContainer}>
                 <div className={styles.contentContainer}>
-                    <div className={styles.landingContainer}>
-                        <div className={styles.firstRowGraphics}>
-                            <div className={styles.bobaBox}>
-                                <img 
-                                    src={bobaGraphic} 
-                                    alt="boba"
-                                    />
-                            </div>
-                            <div className={styles.bubbleBox}>
-                                <img 
-                                    src={bubbleText}
-                                    alt="Bubble text"
-                                    />
-                            </div>
-                            <div className={styles.upTextBox}>
-                                <img 
-                                    src={upText}
-                                    alt="Up text"
-                                    />
-                            </div>
-                            <div className={styles.noodleBox}>
-                                <img 
-                                    src={noodleGraphic}
-                                    alt="noodle"
-                                    />
-                            </div>
+                    <div className={styles.firstRowGraphics}>
+                        <div className={styles.bobaBox}>
+                            <img 
+                                src={bobaGraphic} 
+                                alt="boba"
+                                />
                         </div>
-                        <div className={styles.secondRowGraphics}>
-                            <div className={styles.starBox}>
+                        <div className={styles.bubbleBox}>
+                            <img 
+                                src={bubbleText}
+                                alt="Bubble text"
+                                />
+                        </div>
+                        <div className={styles.upTextBox}>
+                            <img 
+                                src={upText}
+                                alt="Up text"
+                                />
+                        </div>
+                        <div className={styles.noodleBox}>
+                            <img 
+                                src={noodleGraphic}
+                                alt="noodle"
+                                />
+                        </div>
+                    </div>
+                    <div className={styles.secondRowGraphics}>
+                        <div className={styles.starBox}>
+                            <img 
+                                src={starGraphic}
+                                alt="starts"
+                                />
+                        </div>
+                        <div className={styles.secondRowColumn}>
+                            <div className={styles.yourDayBox}>
                                 <img 
-                                    src={starGraphic}
-                                    alt="starts"
+                                    src={yourDayText}
+                                    alt="Your day text"
                                     />
                             </div>
-                            <div className={styles.secondRowColumn}>
-                                <div className={styles.yourDayBox}>
-                                    <img 
-                                        src={yourDayText}
-                                        alt="Your day text"
-                                        />
-                                </div>
-                                <div className={styles.strawBox}>
-                                    <img 
-                                        className={styles.strawImage}
-                                        src={strawGraphic2}
-                                        alt="straw"
-                                    />
-                                    <Link 
-                                        className={styles.makeDrink}
-                                        alt="make a drink"
-                                        to={'/menu'}
-                                        >
-                                            Make a drink
-                                    </Link>
-                                    <img 
-                                        className={styles.arrowIcon} 
-                                        src={arrowIcon}
-                                        alt="arrow icon"    
-                                    />
-                                </div>
-                            </div>
-                            <div className={styles.bubbleTeaBox}>
+                            <div className={styles.strawBox}>
                                 <img 
-                                    src={bubbleTeaGraphic}
-                                    alt="bubble tea"    
+                                    className={styles.strawImage}
+                                    src={strawGraphic2}
+                                    alt="straw"
+                                />
+                                <Link 
+                                    className={styles.makeDrink}
+                                    alt="make a drink"
+                                    to={'/menu'}
+                                    >
+                                        Make a drink
+                                </Link>
+                                <img 
+                                    className={styles.arrowIcon} 
+                                    src={arrowIcon}
+                                    alt="arrow icon"    
                                 />
                             </div>
                         </div>
-                        <div className={styles.thirdRowGraphics}>
+                        <div className={styles.bubbleTeaBox}>
                             <img 
-                                className={styles.splashImage}
-                                src={splashGraphic}
-                                alt="splash"
+                                src={bubbleTeaGraphic}
+                                alt="bubble tea"    
                             />
                         </div>
                     </div>
-                    <div className={styles.customizeContainer}>
-                        <div className={styles.background}>
-                            {/* <div className={styles.pinkRectangle}/> */}
-                            <div className={styles.menuContainer}>
-                                <div className={styles.drinksMenu}>
-                                    <div className={styles.drinkColumn} >
-                                        <img 
-                                            src={passionfruitDrink}
-                                            alt="passionfruit"
-                                            />
-                                        <div className={styles.passionBox}>Mango Tango</div>
-                                    </div>
-                                    <div className={styles.drinkColumn}>
-                                        <img 
-                                            src={strawberryLycheeDrink}
-                                            alt="strawberry serenade"
-                                            />
-                                        <div className={styles.strawlychBox}>Strawberry Serenade</div>
-                                    </div>
-                                    <div className={styles.drinkColumn}>
-                                    <img 
-                                        src={pandanDrink}
-                                        alt="pandan"
-                                        />
-                                    <div className={styles.pandanBox}>Pandan dream pop</div>
-                                    </div>
-                                </div>
-                                <img 
-                                    src={customizeBackground}
-                                    className={styles.customBackground}
-                                    alt='background'
-                                />
-                            </div>
-
-                        </div>
+                    <div className={styles.thirdRowGraphics}>
+                        <img 
+                            className={styles.splashImage}
+                            src={splashGraphic}
+                            alt="splash"
+                        />
                     </div>
-                    {/* //testimonials section */}
+                    <div className={styles.background}>
+                        {/* <div className={styles.pinkRectangle}/> */}
+                        <div className={styles.menuContainer}>
+                            <div className={styles.drinksMenu}>
+                                <div className={styles.drinkColumn} >
+                                    <img 
+                                        src={passionfruitDrink}
+                                        alt="passionfruit"
+                                        />
+                                    <div className={styles.passionBox}>Mango Tango</div>
+                                </div>
+                                <div className={styles.drinkColumn}>
+                                    <img 
+                                        src={strawberryLycheeDrink}
+                                        alt="strawberry serenade"
+                                        />
+                                    <div className={styles.strawlychBox}>Strawberry Serenade</div>
+                                </div>
+                                <div className={styles.drinkColumn}>
+                                <img 
+                                    src={pandanDrink}
+                                    alt="pandan"
+                                    />
+                                <div className={styles.pandanBox}>Pandan dream pop</div>
+                                </div>
+                            </div>
+                            <img 
+                                src={customizeBackground}
+                                className={styles.customBackground}
+                                alt='background'
+                            />
+                        </div>
+
+                    </div>
                 </div>
+                <Testimonial />
             </div>
             <Footer/>
         </>

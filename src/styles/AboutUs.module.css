@@ -67,6 +67,8 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .memberName, .memberTitle {

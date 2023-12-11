@@ -142,7 +142,7 @@
 }
 
 .bubbleTeaBox{
-    width: 30%;
+    width: 24%;
     height: 419px;
     display: flex;
     padding: 33px 60px;
@@ -154,6 +154,7 @@
 /* Third Row */
 
 .thirdRowGraphics{
+    height: 31.6vh;
     width: 100%;
 }
 
@@ -181,7 +182,7 @@
 } */
 
 .customBackground{
-    /* position: absolute; */
+    width: 100%;
 }
 
 .drinksMenu{
